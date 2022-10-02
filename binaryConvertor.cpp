@@ -9,12 +9,11 @@ int main() {
     while(num>0)
     {
         int rem = num%2;
-        v.push_back(rem);
+        v.push_front(rem);
         num/=2;
     }
-    v.push_front(num);
     for(int i=0; i<v.size(); i++)
     {
-        cout<<v[i]<<" ";
+        cout<<v[i];
     }
 }
